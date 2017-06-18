@@ -13,7 +13,12 @@
 	<body>
 
 <center>
-■■■■<br>
+<img src="./image/knowledge.jpg">
+<img src="./image/join.jpg">
+<img src="./image/interview.jpg">
+<img src="./image/resident.jpg">
+<img src="./image/sales.jpg">
+<img src="./image/reader.jpg"><br>
 <form action="result" method="post" target="result_frame">
 			<input type="text" id="message" name="message">
 			<input type="submit" value="検索">
