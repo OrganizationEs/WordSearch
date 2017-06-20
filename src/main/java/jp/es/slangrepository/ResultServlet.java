@@ -37,16 +37,16 @@ public class ResultServlet extends HttpServlet {
 	    PrintWriter out = response.getWriter();
 
 	    out.println("<html>");
-	    out.println("<head><title>タイトル</title></head><body>");
+	    out.println("<head><title>タイトル</title><link rel=\"stylesheet\" type=\"text/css\" href=\"test.css\" /></head><body>");
 		for (int i = 0; i < extractSlangs.size(); i++) {
-			out.println("<table>");
-			out.println("<tr><th>用語名</th><td>");
+			out.println("<table class=\"test\">");
+			out.println("<tr><th scope=\"row\">用語名</th><td>");
 			out.println(extractSlangs.get(i).getName());
 			out.println("</td></tr>");
-			out.println("<tr><th>説明</th><td>");
+			out.println("<tr><th scope=\"row\">説明</th><td>");
 			out.println(extractSlangs.get(i).getDescription());
 			out.println("</td></tr>");
-			out.println("<tr><th>関連</th><td>");
+			out.println("<tr><th scope=\"row\">関連</th><td>");
 			out.println(extractSlangs.get(i).getRelational());
 			out.println("</td></tr>");
 			out.println("</table><br>");
