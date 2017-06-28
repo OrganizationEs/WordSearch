@@ -1,24 +1,38 @@
-table.test {
-	border-collapse: collapse;
-	text-align: left;
-	line-height: 1.5;
-	border-top: 1px solid #ccc;
-	border-left: 3px solid #369;
-}
-table.test th {
-	width: 147px;
-	padding: 10px;
-	font-weight: bold;
-	vertical-align: top;
-	color: #153d73;
-	border-right: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
+.box28 {
+    position: relative;
+    margin: 1em 0;
+    padding: 15px 10px 7px;
+    border: solid 1px #cccccb;
+    font-size: 15px;
+    font-weight:lighter;
 
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
 }
-table.test td {
-	width: 349px;
-	padding: 10px;
-	vertical-align: top;
-	border-right: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
+
+.box28 .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -12px;
+    left: -10px;
+    padding: 0 6px;
+    padding-left: 30px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    font-size: 20px;
+    background: #FFC107;
+    color: #ffffff;
+    font-weight: bold;
+
+    background:-webkit-gradient(linear, left top, right bottom, from(#234670), to(#198cbc));
+	background:-moz-linear-gradient(left, #234670, #198cbc);
+	background:linear-gradient(left, #234670, #198cbc);
+}
+
+.box28 p{
+    margin: 0;
+    padding: 0;
 }

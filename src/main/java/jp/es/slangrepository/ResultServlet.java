@@ -37,19 +37,19 @@ public class ResultServlet extends HttpServlet {
 	    PrintWriter out = response.getWriter();
 
 	    out.println("<html>");
-	    out.println("<head><title>タイトル</title><link rel=\"stylesheet\" type=\"text/css\" href=\"test.css\" /></head><body>");
+	    out.println("<head><title>Lainz用語検索サイト_検索結果フレーム</title><link rel=\"stylesheet\" type=\"text/css\" href=\"test.css\" /></head><body>");
 		for (int i = 0; i < extractSlangs.size(); i++) {
-			out.println("<table class=\"test\">");
-			out.println("<tr><th scope=\"row\">用語名</th><td>");
+			out.println("<div class=\"box28\">");
+			out.println("<span class=\"box-title\">");
 			out.println(extractSlangs.get(i).getName());
-			out.println("</td></tr>");
-			out.println("<tr><th scope=\"row\">説明</th><td>");
+			out.println("</span>");
+			out.println("<p>");
 			out.println(extractSlangs.get(i).getDescription());
-			out.println("</td></tr>");
-			out.println("<tr><th scope=\"row\">関連</th><td>");
+			out.println("<br>");
+			out.print("関連語：");
 			out.println(extractSlangs.get(i).getRelational());
-			out.println("</td></tr>");
-			out.println("</table><br>");
+			out.println("</p>");
+			out.println("</div>");
 		}
 	    out.println("</body></html>");
 
