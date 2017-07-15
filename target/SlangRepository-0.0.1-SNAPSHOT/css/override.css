@@ -1,0 +1,141 @@
+/*navbarのスタイルをオーバーライド*/
+    .navbar-default {
+  background-color: #48b9ea;
+  border-color: none;
+}
+.navbar-default .navbar-brand {
+  color: #ffffff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #f78f42;
+}
+.navbar-default .navbar-text {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #f78f42;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #f78f42;
+  background-color: #234670;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #f78f42;
+  background-color: #234670;
+}
+.navbar-default .navbar-toggle {
+  border-color: #234670;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #234670;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ffffff;
+}
+.navbar-default .navbar-link {
+  color: #ffffff;
+}
+.navbar-default .navbar-link:hover {
+  color: #f78f42;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #f78f42;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #f78f42;
+    background-color: #234670;
+  }
+}
+
+
+/*リンクのスタイルをオーバーライド*/
+.categories_link{
+  width:100%;
+  height: 80px;
+  background-color:#f78f42;
+  border-radius: 5px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
+  align-items: center; /* 縦方向中央揃え */
+  -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
+  justify-content: center; /* 横方向中央揃え */;
+
+/*遊び心→ボタンをレインボーにするためのCSS,入らなかったら外してください*/
+/*追記、要らないようなのでコメントアウト。*/
+  /*animation: bg-color 10s infinite;
+  -webkit-animation: bg-color 10s infinite;*/
+}
+
+.categories_link:hover{
+  background-color: #fbc7a0;
+}
+/*遊び心→ボタンをレインボーにするためのCSS,入らなかったら外してください */
+/*追記、要らないようなのでコメントアウト。*/
+/*@-webkit-keyframes bg-color {
+0% { background-color: #e74c3c; }
+20% { background-color: #f1c40f; }
+40% { background-color: #1abc9c; }
+60% { background-color: #3498db; }
+80% { background-color: #9b59b6; }
+100% { background-color: #e74c3c; }
+}
+@keyframes bg-color {
+0% { background-color: #e74c3c; }
+20% { background-color: #f1c40f; }
+40% { background-color: #1abc9c; }
+60% { background-color: #3498db; }
+80% { background-color: #9b59b6; }
+100% { background-color: #e74c3c; }
+}*/
+
+a{
+  color:white;
+}
+
+.color1{
+  background-color: #f9ac73;
+  transition: 0.3s ;
+}
+.color2{
+  background-color: #f89d5a;
+  transition: 0.3s ;
+}
+.color3{
+  background-color: #f78f42;
+  transition: 0.3s ;
+}
+.color4{
+  background-color: #f6812a;
+  transition: 0.3s ;
+}
+.color5{
+  background-color: #f57211;
+  transition: 0.3s ;
+}
+.color6{
+  background-color: #e3660a;
+  transition: 0.3s ;
+}

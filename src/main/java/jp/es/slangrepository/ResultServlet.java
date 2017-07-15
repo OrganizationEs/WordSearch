@@ -37,7 +37,7 @@ public class ResultServlet extends HttpServlet {
 	    PrintWriter out = response.getWriter();
 
 	    out.println("<html>");
-	    out.println("<head><title>Lainz用語検索サイト_検索結果フレーム</title><link rel=\"stylesheet\" type=\"text/css\" href=\"test.css\" /></head><body>");
+	    out.println("<head><title>Lainz用語検索サイト_検索結果フレーム</title><link rel=\"stylesheet\" type=\"text/css\" href=\"css/test.css\" /></head><body>");
 		for (int i = 0; i < extractSlangs.size(); i++) {
 			out.println("<div class=\"box28\">");
 			out.println("<span class=\"box-title\">");
