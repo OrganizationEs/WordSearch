@@ -52,12 +52,13 @@
     <!-- カテゴリを２段表示 -->
     <br />
     <div class="col-sm-12">
+      <a class="col-sm-1"></a>
       <a class="col-sm-2"><h3 class="categories_link color1">入社時</h3></a>
       <a class="col-sm-2"><h3 class="categories_link color2">面談用</h3></a>
       <a class="col-sm-2"><h3 class="categories_link color3">常駐開始</h3></a>
       <a class="col-sm-2"><h3 class="categories_link color4">常駐先での営業</h3></a>
-      <a class="col-sm-2"><h3 class="categories_link color5">リーダー就任</h3></a>
       <a class="col-sm-2"><h3 class="categories_link color6">汎用知識</h3></a>
+      <a class="col-sm-1"></a>
     </div>
   </div>
 
