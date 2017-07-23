@@ -46,18 +46,24 @@
 
   </div>
 </nav>
-
+    
 <!-- カテゴリリンク -->
   <div class="icon-wrapper">
-    <!-- カテゴリを２段表示 -->
+    
+    <!-- メモ：ここをフォームにしちゃって、ResultServeltを呼び出す。
+    ボタンのメソットはサブミットにして、各カテゴリ番号をバリューに入れてそれに対応した配列を読み込む。
+    こんな認識であってますか？？-->
+
     <br />
     <div class="col-sm-12">
       <a class="col-sm-1"></a>
-      <a class="col-sm-2"><h3 class="categories_link color1">入社時</h3></a>
-      <a class="col-sm-2"><h3 class="categories_link color2">面談用</h3></a>
-      <a class="col-sm-2"><h3 class="categories_link color3">常駐開始</h3></a>
-      <a class="col-sm-2"><h3 class="categories_link color4">常駐先での営業</h3></a>
-      <a class="col-sm-2"><h3 class="categories_link color6">汎用知識</h3></a>
+      <form action="result" method="post" target="result_frame">
+      <button type="submit" name="message" value="1" class="col-sm-2 categories_link color1">入社時</button>
+      <button type="submit" name="message" value="2" class="col-sm-2 categories_link color2">面談用</button>
+      <button type="submit" name="message" value="3" class="col-sm-2 categories_link color3">常駐開始</button>
+      <button type="submit" name="message" value="4" class="col-sm-2 categories_link color4">常駐先での営業</button>
+      <button type="submit" name="message" value="5" class="col-sm-2 categories_link color5">汎用知識</button>
+      </form>
       <a class="col-sm-1"></a>
     </div>
   </div>
