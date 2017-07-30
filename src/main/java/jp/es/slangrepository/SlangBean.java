@@ -23,7 +23,7 @@ public class SlangBean {
 		this.description = description;
 	}
 	public String getRelational() {
-		return relational;
+	 	return relational;
 	}
 	public void setRelational(String relational) {
 		this.relational = relational;
@@ -41,6 +41,6 @@ public class SlangBean {
 		super();
 		this.name = "";
 		this.description = "";
-		this.relational = "";
+		// this.relational = "";
 	}
 }

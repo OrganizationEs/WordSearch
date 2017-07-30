@@ -36,23 +36,24 @@ public class ResultServlet extends HttpServlet {
 	    response.setContentType("text/html;charset=Shift_JIS");
 	    PrintWriter out = response.getWriter();
 
-	    out.println("<html>");
-	    out.println("<head><title>Lainz用語検索サイト_検索結果フレーム</title><link rel=\"stylesheet\" type=\"text/css\" href=\"css/test.css\" /></head><body>");
-		for (int i = 0; i < extractSlangs.size(); i++) {
-			out.println("<div class=\"box28\">");
-			out.println("<span class=\"box-title\">");
-			out.println(extractSlangs.get(i).getName());
-			out.println("</span>");
-			out.println("<p>");
-			out.println(extractSlangs.get(i).getDescription());
-			out.println("<br>");
-			out.print("関連語：");
-			out.println(extractSlangs.get(i).getRelational());
-			out.println("</p>");
-			out.println("</div>");
-		}
-	    out.println("</body></html>");
+    	    out.println("<html>");
+    	    out.println("<head><title>Lainz用語検索サイト_検索結果フレーム</title><link rel=\"stylesheet\" type=\"text/css\" href=\"css/test.css\" /></head><body>");
+    		for (int i = 0; i < extractSlangs.size(); i++) {
+    			out.println("<div class=\"box28\">");
 
-	    out.close();
+    			out.println("<span class=\"box-title\">");
+    			out.println(extractSlangs.get(i).getName());
+    			out.println("</span>");
+    			out.println("<p>");
+    			out.println(extractSlangs.get(i).getDescription());
+    			out.println("<br>");
+    			out.print("関連語：");
+    			out.println(extractSlangs.get(i).getRelational());
+    			out.println("</p>");
+    			out.println("</div>");
+    		}
+    	    out.println("</body></html>");
+
+    	    out.close();
 	}
 }

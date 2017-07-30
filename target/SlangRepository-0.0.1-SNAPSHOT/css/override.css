@@ -72,7 +72,6 @@
 
 /*リンクのスタイルをオーバーライド*/
 .categories_link{
-  width:100%;
   height: 80px;
   background-color:#f78f42;
   border-radius: 5px;
@@ -111,31 +110,28 @@
 100% { background-color: #e74c3c; }
 }*/
 
-a{
+button{
   color:white;
+  font-size: 20px;
 }
 
 .color1{
-  background-color: #f9ac73;
+  background-color: #F4D06F;
   transition: 0.3s ;
 }
 .color2{
-  background-color: #f89d5a;
+  background-color: #FF8811;
   transition: 0.3s ;
 }
 .color3{
-  background-color: #f78f42;
+  background-color: #7DB2DB;
   transition: 0.3s ;
 }
 .color4{
-  background-color: #f6812a;
+  background-color: #3D7E96;
   transition: 0.3s ;
 }
 .color5{
-  background-color: #f57211;
-  transition: 0.3s ;
-}
-.color6{
-  background-color: #e3660a;
+  background-color: #392F5A;
   transition: 0.3s ;
 }
